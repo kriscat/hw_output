@@ -45,19 +45,6 @@ window.addEventListener("keyup", function(e) {
     }
 });
 
-//function for an array with fromcharcode method
-// let alphabet = [];
-// let;
-
-// function fill() {
-//     for (let i = 65; i <= 90; i++) {
-//         alphabet.push(String.fromCharCode(i));
-//         b = alphabet;
-//     }
-//     return alphabet;
-// }
-
-
 let alphabet = [];
 let key = input_charcode;
 let index = [];
@@ -66,15 +53,16 @@ function fill(key) {
     for (let i = 65; i <= 90; i++) {
         alphabet.push(String.fromCharCode(i));
         index = alphabet[key];
+        result = alphabet.slice(0, key)
     }
-    console.log(index);
+    // console.log(alphabet);
     return alphabet;
 }
 
 window.addEventListener("keyup", function(e) {
     if (e.key == "Enter") {
         fill(key.value)
-        charcode.innerHTML += index;
-        console.log(index);
+        charcode.innerHTML += result + "<br>";
+        // console.log(index);
     }
 });
