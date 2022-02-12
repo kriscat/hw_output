@@ -1,0 +1,71 @@
+:root {
+    --size: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    background-color: #3f8b0d;
+}
+
+#input,
+#input_fibonacci,
+#input_charcode {
+    width: 40%;
+    height: 50px;
+    padding: 25px;
+    border: 1px solid #22410d;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    transition: 0.2s;
+    margin: 10px;
+    background-color: #3e751a;
+    border-radius: 100px;
+}
+
+#input::placeholder,
+#input_fibonacci::placeholder,
+#input_charcode::placeholder {
+    color: rgba(196, 206, 63, 0.7);
+    font-size: 22px;
+    text-align: center;
+}
+
+#input:focus,
+#input_fibonacci:focus,
+#input_charcode:focus {
+    background-color: #65a839;
+    border-color: #1f410b;
+    width: 42%;
+    box-shadow: 10px 5px 10px rgb(19, 88, 31);
+}
+
+#output,
+#fibonacci,
+#charcode {
+    margin: 5px;
+    width: 90%;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid rgb(72, 99, 72);
+    font-size: 20px;
+    word-wrap: break-word;
+    text-align: start;
+    font-weight: 500;
+    color: rgb(68, 48, 12);
+    background-color: #69a045;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
