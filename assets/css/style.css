@@ -69,8 +69,12 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-media(max-width:800px) {
-        #input {
-            width: 70%;
-        }
+
+@media(max-width:800px) {
+    #input,
+    #input_fibonacci,
+    #input_charcode {
+        width: 80%;
+        height: 70px;
     }
+}
